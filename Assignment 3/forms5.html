@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+</head>
+<body>
+  <h1>Travel Booking Form</h1>
+  <form action="/submit-booking" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+    <label for="contact">Contact Information:</label><br>
+    <input type="text" id="contact" name="contact" required><br><br>
+    <label for="destination">Destination:</label><br>
+    <select id="destination" name="destination" required>
+      <option value="">--Select Destination--</option>
+      <option value="New York">New York</option>
+      <option value="Paris">Paris</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Dubai">Dubai</option>
+      <option value="Sydney">Sydney</option>
+    </select><br><br>
+    <label for="travel-date">Travel Date:</label><br>
+    <input type="date" id="travel-date" name="travel-date" required><br><br>
+    <label for="return-date">Return Date:</label><br>
+    <input type="date" id="return-date" name="return-date" required><br><br>
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+    <label>Travel Class:</label><br>
+    <input type="radio" id="economy" name="class" value="Economy" required>
+    <label for="economy">Economy</label><br>
+    <input type="radio" id="business" name="class" value="Business">
+    <label for="business">Business</label><br>
+    <input type="radio" id="first" name="class" value="First Class">
+    <label for="first">First Class</label><br><br>
+    <input type="checkbox" id="insurance" name="insurance" value="Yes">
+    <label for="insurance">Opt for Travel Insurance</label><br><br>
+    <label for="total">Total Cost:</label><br>
+    <input type="text" id="total" name="total" readonly><br><br>
+    <button type="submit">Book Now</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
